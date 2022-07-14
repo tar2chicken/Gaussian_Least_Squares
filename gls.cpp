@@ -41,9 +41,9 @@ int main() {
 	// Write data to ofile
 	ifstream ifile(ifname);
 	ofstream ofile(ofname);
-	ofile << "a, " << minimum.at(1) << "+-" << (amax-amin)/divi << endl;
-	ofile << "s, " << minimum.at(2) << "+-" << (smax-smin)/divi << endl;
-	ofile << "m, " << minimum.at(3) << "+-" << (mmax-mmin)/divi << endl;
+	ofile << "a, " << minimum.at(1) << "+-" << (amax-amin)/divi << "," << endl;
+	ofile << "s, " << minimum.at(2) << "+-" << (smax-smin)/divi << "," << endl;
+	ofile << "m, " << minimum.at(3) << "+-" << (mmax-mmin)/divi << "," << endl;
 	ofile << ", , " << endl;
 	ofile << ", raw, gls" << endl;
 	for (int i = 0; i < number; i++) {
